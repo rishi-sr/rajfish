@@ -1,0 +1,92 @@
+@import './color';
+.smallfish{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+
+    .smallfish-header{
+        height: 10vh;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1{
+            font-size: 3vw;
+        }
+        button{
+            background-color: $main;
+            font-size: 1.2vw;
+            padding: 5px 10px;
+            border-radius: 20px;
+            
+            a{
+                text-decoration: none;
+                color: $secondary;
+            }
+
+        }
+    }
+    hr{
+        width: 90%;
+        height: 2px;
+        background-color: $main;
+    }
+
+    .smallfish-cards{
+        height: 60vh;
+        margin-top: 10vh;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 20px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+
+        .cards{
+            height: 50vh;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 20px;
+
+            img{
+                height: 70%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px 20px 0 0;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                transition: transform 0.3s ease;
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+            .rate{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h2{
+                    font-size: 2vw;
+                    margin-top: 10px;
+                }
+
+                span{
+                    font-size: 2.5vw;
+                    color: $main;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #075e54;
+                }
+
+            }
+        }
+    }
+}

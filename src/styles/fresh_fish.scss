@@ -1,0 +1,35 @@
+.fresh_fish{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+
+    .fresh_fish_banner{
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+
+        .img{
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            }
+        }
+    }
+    .fresh_fish_content{
+        height: 100vh;
+    }
+}
