@@ -1,21 +1,77 @@
-.banner{
-    height: 50vh;
-    width: 100%;
+.banner {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+  overflow: hidden;
+
+  .banimg {
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+    filter: brightness(70%);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30vh;
-    .banimg{
-        height: 100%;
-        width: 70%;
-        object-fit: cover;
-        filter: brightness(70%);
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 40px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      display: flex;
+        align-items: center;
+        justify-content: center;
     }
+  }
+
+  /* -------------------
+        Responsive Breakpoints
+  ------------------- */
+
+  @media (max-width: 1024px) {
+    height: 45vh;
+    margin-top: 20vh;
+
+    .banimg {
+      width: 80%;
+
+      img {
+        border-radius: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: auto; // let content adjust
+    margin-top: 15vh;
+
+    .banimg {
+      width: 90%;
+      height: auto;
+
+      img {
+        height: auto;
+        max-height: 300px; // prevents giant images
+        border-radius: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 10vh;
+
+    .banimg {
+      width: 90%;
+      height: auto;
+
+      img {
+        max-height: 220px;
+        border-radius: 20px;
+      }
+    }
+  }
 }

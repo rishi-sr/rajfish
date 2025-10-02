@@ -2,5 +2,11 @@
     "hero": {
         "title": "Rajfish - Catch of the day. Delivered your way"
         
+    },
+    "freshfish":{
+        "h1": "Fresh Fish"
+    },
+    "global":{
+        "viewmore": "View More"
     }
 }

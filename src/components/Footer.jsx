@@ -29,7 +29,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} All Rights Reserved | Provided by <span>Pulpul Digital</span></p>
+        <p>© {new Date().getFullYear()} All Rights Reserved</p>
       </div>
     </footer>
   );
